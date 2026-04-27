@@ -9,7 +9,7 @@ public class FeePaymentDAO {
     private Connection getConnection() throws Exception {
         Class.forName("com.mysql.cj.jdbc.Driver");
         return DriverManager.getConnection(
-            "jdbc:mysql://localhost:8080/CollegeFeeWebApp",
+            "jdbc:mysql://localhost:3306/college_fee_db",
             "root",
             "password"
         );
